@@ -1,4 +1,8 @@
 # SDL
+This project aims at re-identify person under different spectrum using disentanglement learning network. It is based on our IEEE-TCSVT 2020 paper. 
+
+# Architecture
+![Screenshot](architecture.jpg)
 
 ### 1. Prepare the datasets.
 
