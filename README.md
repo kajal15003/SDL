@@ -66,8 +66,6 @@ python Test/testing-filename.py --mode all --resume 'model_path' --gpu 1 --datas
 # Results
 ![Screenshot](result.png)
 
-Contact: kajalk@iiitd.ac.in
-
 
 # Citation
 If you use any of the provided code, please cite:
@@ -78,6 +76,6 @@ If you use any of the provided code, please cite:
   journal={IEEE Transactions on Circuits and Systems for Video Technology},
   year={2020},
   publisher={IEEE}
-
 }
 ```
+Contact: kajalk@iiitd.ac.in
