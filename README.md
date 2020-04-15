@@ -13,7 +13,7 @@ This project aims at re-identify person under different spectrum using disentang
 
 # Pre-processing
 
-You may need manually define the data path first.
+You need to manually define the data path first.
 
    - run `Pre-processing/python pre_process_sysu.py` to pepare the dataset, the training data will be stored in ".npy" format.
    
