@@ -4,7 +4,7 @@ This project aims at re-identify person under different spectrum using disentang
 # Architecture
 ![Screenshot](arch.jpg)
 
-### 1. Prepare the datasets.
+# Pre-processing
 
 - (1) RegDB Dataset [1]: The RegDB dataset can be downloaded from this [website](http://dm.dongguk.edu/link.html) by submitting a copyright form.
 
@@ -14,8 +14,9 @@ This project aims at re-identify person under different spectrum using disentang
 
    - run `python pre_process_sysu.py` to pepare the dataset, the training data will be stored in ".npy" format.
 
-### 2. Training.
-  Train a model by
+# Training
+
+Train a model by
   ```bash
 python training_filename --dataset sysu --lr 0.01 --drop 0.0 --trial 1 --gpu 1
 ```
@@ -56,3 +57,17 @@ python testing-filename.py --mode all --resume 'model_path' --gpu 1 --dataset sy
   - `--gpu`:  which gpu to run.
 
 Contact: kajalk@iiitd.ac.in
+
+
+# Citation
+If you use any of the provided code, please cite:
+```
+@article{kansal2020sdl,
+  title={SDL: Spectrum-Disentangled Representation Learning for Visible-Infrared Person Re-identification},
+  author={Kansal, Kajal and Subramanyam, AV and Wang, Zheng and Satoh, Shin’ichi},
+  journal={IEEE Transactions on Circuits and Systems for Video Technology},
+  year={2020},
+  publisher={IEEE}
+}
+}
+```
