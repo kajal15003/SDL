@@ -68,6 +68,6 @@ If you use any of the provided code, please cite:
   journal={IEEE Transactions on Circuits and Systems for Video Technology},
   year={2020},
   publisher={IEEE}
-}
+
 }
 ```
