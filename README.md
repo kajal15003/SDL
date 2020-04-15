@@ -4,21 +4,26 @@ This project aims at re-identify person under different spectrum using disentang
 # Architecture
 ![Screenshot](arch.jpg)
 
-# Pre-processing
-
+# Dataset Preparation
 - (1) RegDB Dataset [1]: The RegDB dataset can be downloaded from this [website](http://dm.dongguk.edu/link.html) by submitting a copyright form.
 
     - (Named: "Dongguk Body-based Person Recognition Database (DBPerson-Recog-DB1)" on their website). 
 
 - (2) SYSU-MM01 Dataset [2]: The SYSU-MM01 dataset can be downloaded from this [website](http://isee.sysu.edu.cn/project/RGBIRReID.htm).
 
-   - run `python pre_process_sysu.py` to pepare the dataset, the training data will be stored in ".npy" format.
+# Pre-processing
+
+You may need manually define the data path first.
+
+   - run `Pre-processing/python pre_process_sysu.py` to pepare the dataset, the training data will be stored in ".npy" format.
+   
+   To add Random Erasing -run `Pre-processing/Random Erasing/python pre_process_sysu.py` 
 
 # Training
 
-Train a model by
+Import the model from Models directory and Train the model by
   ```bash
-python training_filename --dataset sysu --lr 0.01 --drop 0.0 --trial 1 --gpu 1
+python Train/training_filename --dataset sysu --lr 0.01 --drop 0.0 --trial 1 --gpu 1
 ```
 
   - `training_filename`: name of the training file.
@@ -33,7 +38,7 @@ python training_filename --dataset sysu --lr 0.01 --drop 0.0 --trial 1 --gpu 1
 
   -  `--gpu`: which gpu to run.
 
-You may need mannully define the data path first.
+Manually define the data path first.
 
 **Training Log**: The training log will be saved in `log/" dataset_name"+ log`. 
 **Final Model**: It will be saved in `save_model/`.
@@ -42,7 +47,7 @@ You may need mannully define the data path first.
 
 Test a model on SYSU-MM01 or RegDB dataset by 
   ```bash
-python testing-filename.py --mode all --resume 'model_path' --gpu 1 --dataset sysu
+python Test/testing-filename.py --mode all --resume 'model_path' --gpu 1 --dataset sysu
 ```
   - `testing-filename`: name of the testing file.
 
