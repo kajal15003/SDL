@@ -1,0 +1,24 @@
+==> Loading data..
+Dataset regdb statistics:
+  ------------------------------
+  subset   | # ids | # images
+  ------------------------------
+  visible  |   206 |     2060
+  thermal  |   206 |     2060
+  ------------------------------
+  query    |   206 |     2060
+  gallery  |   206 |     2060
+  ------------------------------
+Data Loading Time:	 15.851
+==> Building model..
+Using device: cuda
+
+==> loading checkpoint regdb_id_bn_relu_drop_0.0_lr_1.0e-02_dim_512_resnet50_trial_1_best.t
+==> loaded checkpoint regdb_id_bn_relu_drop_0.0_lr_1.0e-02_dim_512_resnet50_trial_1_best.t (epoch 116)
+==> Start Training...
+==> Preparing Data Loader...
+Epoch: [116][0/64] Time: 5.461 (5.461) Data: 0.250 (0.250) lr:0.01 Loss: 0.0948 (0.0948) Accu: 100.00
+Epoch: [116][10/64] Time: 0.404 (0.872) Data: 0.105 (0.127) lr:0.01 Loss: 0.0818 (0.0886) Accu: 100.00
+Epoch: [116][20/64] Time: 0.416 (0.653) Data: 0.117 (0.121) lr:0.01 Loss: 0.0975 (0.0886) Accu: 100.00
+Epoch: [116][30/64] Time: 0.422 (0.580) Data: 0.123 (0.123) lr:0.01 Loss: 0.0840 (0.0886) Accu: 100.00
+Epoch: [116][40/64] Time: 0.433 (0.544) Data: 0.134 (0.126) lr:0.01 Loss: 0.0780 (0.0881) Accu: 100.00
