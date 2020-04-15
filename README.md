@@ -38,7 +38,7 @@ You may need mannully define the data path first.
 **Training Log**: The training log will be saved in `log/" dataset_name"+ log`. 
 **Final Model**: It will be saved in `save_model/`.
 
-### 3. Testing.
+# Testing.
 
 Test a model on SYSU-MM01 or RegDB dataset by 
   ```bash
