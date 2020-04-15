@@ -17,7 +17,9 @@ You may need manually define the data path first.
 
    - run `Pre-processing/python pre_process_sysu.py` to pepare the dataset, the training data will be stored in ".npy" format.
    
-   To add Random Erasing -run `Pre-processing/Random Erasing/python pre_process_sysu.py` 
+   To add Random Erasing 
+   
+   - run `Pre-processing/Random Erasing/python pre_process_sysu.py` 
 
 # Training
 
