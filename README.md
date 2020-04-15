@@ -63,6 +63,9 @@ python Test/testing-filename.py --mode all --resume 'model_path' --gpu 1 --datas
   
   - `--gpu`:  which gpu to run.
 
+# Results
+![Screenshot](result.png)
+
 Contact: kajalk@iiitd.ac.in
 
 
