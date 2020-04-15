@@ -17,9 +17,11 @@ This project aims at re-identify person under different spectrum using disentang
 ### 2. Training.
   Train a model by
   ```bash
-python train.py --dataset sysu --lr 0.01 --drop 0.0 --trial 1 --gpu 1
+python training_filename --dataset sysu --lr 0.01 --drop 0.0 --trial 1 --gpu 1
 ```
 
+  - `training_filename`: name of the training file.
+  
   - `--dataset`: which dataset "sysu" or "regdb".
 
   - `--lr`: initial learning rate.
@@ -32,18 +34,17 @@ python train.py --dataset sysu --lr 0.01 --drop 0.0 --trial 1 --gpu 1
 
 You may need mannully define the data path first.
 
-**Parameters**: More parameters can be found in the script.
-
-**Sampling Strategy**: N (= batch size) person identities are randomly sampled at each step, then randomly select one visible and one thermal image. 
-
-**Training Log**: The training log will be saved in `log/" dataset_name"+ log`. Model will be saved in `save_model/`.
+**Training Log**: The training log will be saved in `log/" dataset_name"+ log`. 
+**Final Model**: It will be saved in `save_model/`.
 
 ### 3. Testing.
 
 Test a model on SYSU-MM01 or RegDB dataset by 
   ```bash
-python test.py --mode all --resume 'model_path' --gpu 1 --dataset sysu
+python testing-filename.py --mode all --resume 'model_path' --gpu 1 --dataset sysu
 ```
+  - `testing-filename`: name of the testing file.
+
   - `--dataset`: which dataset "sysu" or "regdb".
   
   - `--mode`: "all" or "indoor" all search or indoor search (only for sysu dataset).
